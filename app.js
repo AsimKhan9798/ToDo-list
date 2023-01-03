@@ -10,7 +10,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://Asimkhan:Asim9798736@cluster0.arwpktr.mongodb.net/todolistDB",{useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false}).then(() => {});
+//mongodb://localhost:27017/todolistDB
+
+mongoose.connect("mongodb+srv://Asimkhan:Asim3149798736@cluster0.kmjalpd.mongodb.net/todolistDB",{useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false}).then(() => {});
 
 const itemsSchema = {
   name: String
